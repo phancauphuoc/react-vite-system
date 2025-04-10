@@ -1,0 +1,8 @@
+[
+  { "id": "system", "name": "System", "href": "#", "current": true },
+  { "name": "Dashboard", "href": "#", "current": false },
+  { "name": "Team", "href": "#", "current": false },
+  { "name": "Projects", "href": "#", "current": false },
+  { "name": "Calendar", "href": "#", "current": false },
+  { "name": "chart", "href": "#", "current": false }
+]
