@@ -1,1 +1,3 @@
 # react-vite-system
+# this project written for system admin page
+# using react, vite, tanstact, taiwinds,...
