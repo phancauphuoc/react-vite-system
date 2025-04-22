@@ -1,0 +1,1 @@
+export { AboutSearchHeader } from "./AboutSearchHeader";

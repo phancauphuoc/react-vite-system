@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen.ts";
+import { AllCommunityModule, ModuleRegistry } from "ag-grid-community";
+
+ModuleRegistry.registerModules([AllCommunityModule]);
 
 const router = createRouter({ routeTree });
 

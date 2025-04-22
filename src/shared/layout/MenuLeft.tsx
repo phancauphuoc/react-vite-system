@@ -6,7 +6,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/20/solid";
-import { menuLeftItem } from "./menuListLeft";
+import { menuLeftItem } from "./MenuListLeft";
 
 const MenuLeft = () => {
   const [openMenu, setOpenMenu] = useState<{ [key: number | string]: boolean }>(

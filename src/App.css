@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+.label-xs {
+  @apply text-xs leading-none text-gray-500 font-medium;
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
