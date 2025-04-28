@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FilterForm, FormItem } from "../../shared/ui/FilterForm";
 import Select, { IOption, ValueType } from "../../shared/ui/Select";
+import Input from "../../shared/ui/Input";
 
 export const AboutSearchHeader = () => {
   const [selectedOption, setSelectedOption] = useState<ValueType>(null);
@@ -23,6 +24,7 @@ export const AboutSearchHeader = () => {
               options={options}
               required
             />
+            <Input label="Age" required />
           </div>
         </FormItem>
       </FilterForm>
