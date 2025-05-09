@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import { FilterForm, FormItem } from "../../shared/ui/FilterForm";
+import { FilterForm, FormAction, FormItem } from "../../shared/ui/FilterForm";
 import Select, { IOption, ValueType } from "../../shared/ui/Select";
 import Input from "../../shared/ui/Input";
+import { Button } from "../../shared/ui/Button";
+import DayPicker from "../../shared/ui/DayPicker";
 
 export const AboutSearchHeader = () => {
   const [selectedOption, setSelectedOption] = useState<ValueType>(null);
+  const [date, setDate] = useState<Date | null>(new Date());
 
   const options: IOption[] = [
     { label: "Apple", value: "apple" },
@@ -25,8 +28,28 @@ export const AboutSearchHeader = () => {
               required
             />
             <Input label="Age" required />
+            <DayPicker
+              label="Birth Date"
+              date={date}
+              onChange={(value) => setDate(value)}
+            />
           </div>
         </FormItem>
+        <FormAction>
+          <Button
+            type="button"
+            title="Search"
+            label="Search"
+            variant="contained"
+          />
+          <Button
+            type="button"
+            title="Reset"
+            label="Reset"
+            variant="outlined"
+          />
+          <Button type="button" title="Reset" />
+        </FormAction>
       </FilterForm>
     </>
   );

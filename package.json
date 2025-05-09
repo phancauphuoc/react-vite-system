@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-routes": "tsr generate"
+    "generate-routes": "tsr generate",
+    "server": "json-server --watch db.json --port 5000"
   },
   "dependencies": {
     "@ag-grid-community/client-side-row-model": "^32.3.5",
@@ -24,11 +25,12 @@
     "@tanstack/router-devtools": "^1.115.2",
     "@tanstack/router-plugin": "^1.115.2",
     "ag-grid-community": "^33.2.2",
-    "ag-grid-react": "^33.2.2",
+    "ag-grid-react": "^33.2.4",
     "clsx": "^2.1.1",
     "heroicons": "^2.2.0",
     "lodash": "^4.17.21",
     "react": "^19.0.0",
+    "react-datepicker": "^8.3.0",
     "react-dom": "^19.0.0",
     "react-select": "^5.10.1",
     "tailwind-merge": "^3.2.0",

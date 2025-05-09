@@ -37,7 +37,7 @@ const Select = ({
           {label} {required && <sup className="text-red-500">*</sup>}
         </label>
       )}
-      <div className="flex flex-col space-y-2 relative">
+      <div className="flex flex-col space-y-2 relative z-10">
         <SelectLib
           inputId={id ?? _id}
           value={value}

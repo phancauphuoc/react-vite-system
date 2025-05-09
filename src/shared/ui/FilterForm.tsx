@@ -70,7 +70,7 @@ export const FilterForm = ({ children, onSubmit }: IFilterForm) => {
 
 export const FormItem = ({ children, className }: IFormItem) => {
   return (
-    <div className={cn("flex flex-col gap-y-5", className)}>
+    <div className={cn("h-[71px] flex flex-col gap-y-5", className)}>
       <hr className="border-gray-200" />
       {children}
     </div>
